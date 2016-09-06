@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ミニ演習：レスポンシブデザイン</title>
+<style type="text/css">
+body {
+  margin: 0;
+  color: white;
+}
+#box-1 { background: #0066cc; }
+#box-2 { background: #ffcc00; }
+#box-3 { background: #009900; }
+#container {
+  margin: 0 auto;
+}
+</style>
+<!-- 640px以下の場合の処理：containerは300px -->
+<style type="text/css" media="screen and (max-width: 640px)">
+#container { width: 300px; }
+#box-1, #box-2, #box-3 {
+  height: 100px;
+}
+</style>
+<!-- 641px 以上 799px以下の場合の処理：containerは500px -->
+<style type="text/css" media="screen and (min-width: 641px) and (max-width: 799px)">
+#container { width: 500px; }
+#box-1 { width: 150px; }
+#box-2 { width: 350px; }
+#box-1, #box-2 {
+  float: left;
+  height: 200px;
+}
+#box-3 {
+  clear: left;
+  height: 100px;
+}
+</style>
+<!-- 800px 以上の場合の処理：containerは800px -->
+<style type="text/css" media="screen and (min-width: 800px)">
+#container { width: 800px; }
+#box-1 { width: 200px; }
+#box-2 { width: 400px; }
+#box-3 { width: 200px; }
+#box-1, #box-2, #box-3 {
+  float: left;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<div id="container">
+  <div id="box-1">ボックス1</div>
+  <div id="box-2">ボックス2</div>
+  <div id="box-3">ボックス3</div>
+</div>
+
+</body>
+</html>
